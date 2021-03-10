@@ -1,0 +1,208 @@
+.Portfolio
+    display: flex
+    // height: 100%
+    // justify-content: center
+    //top: 16vh
+    width: 100vw
+    height: 100vh
+    box-sizing: border-box
+    .portground
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: $default
+        z-index: -1
+    .proj_controls
+        display: flex
+        flex-direction: column
+        width: 50px
+        position: absolute
+        top: 60vh
+        right: 10px
+        opacity: 1
+        transition: all .3s ease
+        z-index: 999
+        &.disabled
+            opacity: .5
+        .btn
+            margin-top: 5px
+            background-color: darken($secondary, 40)
+    .topics
+        @media #{$media_phones}
+            padding: 0 40px
+            width: 100vw
+            box-sizing: border-box
+            top: 35vh
+        display: flex
+        transition: all .6s ease
+        position: absolute
+        top: 16vh
+        padding: 0 85px
+        .topic_images
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            width: 50%
+            transition: all .3s ease
+            .project_image
+                @media #{$media_phones}
+                    height: 30vh
+                width: 100%
+                height: 68vh
+                padding: 20px 0
+                box-sizing: border-box
+                opacity: 0
+                transition: all .6s ease
+                transform: translateY(40px)
+                &.loaded
+                    transform: translateY(0)
+                    &.active
+                        opacity: 1
+                    &.non_active
+                        opacity: .1
+                img
+                    object-fit: cover
+                    width: 100%
+                    height: 100%
+                    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75)
+                    border: 1px solid $primary
+        .topic_infos
+            @media #{$media_phones}
+                margin-top: 5vh
+            display: flex
+            flex-direction: column
+            width: 50%
+            margin-top: 18vh
+            transition: all .3s ease
+            .project_info
+                @media #{$media_phones}
+                    height: 20vh
+                    padding: 15px
+                // overflow: hidden
+                // width: 100%
+                height: 32vh
+                display: flex
+                flex-direction: column
+                justify-content: center
+                // align-items: center
+                padding: 60px
+                box-sizing: border-box
+                opacity: 0
+                transition: all .3s ease
+                transform: translateX(40px)
+                &.loaded
+                    transform: translateX(0)
+                    &.active
+                        opacity: 1
+                    &.non_active
+                        opacity: .1
+                        .info, .open_btn
+                            opacity: 0
+                .name
+                    @media #{$media_phones}
+                        font-size: 20px
+                        white-space: nowrap
+                    font-size: 40px
+                    font-family: 'Indie Flower'
+                    text-transform: uppercase
+                .info
+                    @media #{$media_phones}
+                        font-size: 12px
+                        margin: 5px 0
+                        width: 40vw
+                    font-size: 14px
+                    line-height: 18px
+                    font-weight: 400
+                    opacity: .4
+                    width: 300px
+                    margin: 10px 0
+                    transition: all .3s ease
+                .open_btn
+                    width: 70px
+                    margin: 5px 0
+                    transition: all .3s ease
+
+    .Web
+        position: absolute
+        top: 0
+        left: 0
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 100vw
+        //height: 100vh
+        transform: translateX(300px)
+        opacity: 0
+        transition: all .6s ease
+        font-size: 30px
+        &.opened
+            transform: translateX(0)
+            opacity: 1
+        .project
+            position: relative
+            width: 100%
+            height: 100vh
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            .proj_logo
+                width: 500px
+                img
+                    object-fit: contain
+                    width: 100%
+                    height: 100%
+            .proj_info
+                font-size: 14px
+                font-weight: 100
+                width: 400px
+                text-align: center
+                //margin-top: 20px
+                opacity: 0
+                transform: translateY(20px)
+                animation: textup .6s ease 1.2s
+                animation-fill-mode: forwards
+                //text-transform: uppercase
+            .tablet
+                width: 100%
+                height: 200px
+                position: absolute
+                bottom: 8vh
+                opacity: 0
+                transform: translateY(0px)
+                animation: up 1s ease 1s
+                animation-fill-mode: forwards
+                perspective: 500px
+                img
+                    object-fit: cover
+                    width: 100%
+                    height: 100%
+                    animation: imgup .8s ease 1s
+                    animation-fill-mode: forwards
+                    transform: rotateX(60deg)
+
+@keyframes up
+    0%
+        transform: translateY(100px)
+        opacity: 0
+    100%
+        transform: translateY(0)
+        opacity: 1
+
+@keyframes textup
+    0%
+        transform: translateY(20px)
+        opacity: 0
+    100%
+        transform: translateY(0)
+        opacity: .3
+
+@keyframes imgup
+    0%
+        transform: rotateX(60deg)
+    100%
+        transform: rotateX(0deg)
+

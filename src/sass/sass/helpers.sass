@@ -1,0 +1,27 @@
+.AppBackground
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: -999
+    .backgroundImage
+        position: absolute
+        z-index: 0
+        width: 100%
+        height: 100%
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    .backgroundEffect
+        position: absolute
+        z-index: 1
+        width: 100%
+        height: 100%
+        transition: all .4s ease
+        background-color: transparentize($default, .5)
+        &.darken
+            background-color: $default
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover

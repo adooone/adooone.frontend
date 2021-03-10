@@ -1,0 +1,73 @@
+.Content
+    @extend .flex_center
+    //padding: 0 85px
+    position: absolute
+    top: 0
+    width: 100%
+    box-sizing: border-box
+    // position: relative
+    height: 100%
+    z-index: 998
+    .label
+        opacity: .4
+        font-size: 16px
+    .Home
+        @media #{$media_phones}
+            // padding: 0 40px
+            padding: 40px
+        height: 100%
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 50px
+        box-sizing: border-box
+        .central_text
+            @media #{$media_phones}
+                font-size: 20px
+                font-weight: 100
+                opacity: 1
+            font-size: 70px
+            height: 50px
+            // margin-bottom: 10px
+            font-weight: 900
+            color: $primary
+            // opacity: 1
+            text-transform: uppercase
+            //transform: translateX(100px)
+            text-shadow: 0 0 80px $primary, 0 0 20px #000000AA
+            &:hover
+                // // cursor: default
+        .list
+            overflow: scroll
+            height: 100%
+            width: 100%
+            .Item
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .itemControls
+                    display: flex
+                    .rmvBtn
+                        margin-left: 10px
+                        color: $error
+            .controls
+                display: flex
+                flex-direction: column
+                width: 100%
+                padding: 20px 0
+    .Portfolio
+        // height: 70vh
+        // display: flex
+        // justify-content: center
+        // align-items: center
+    .Team
+        @media #{$media_phones}
+            padding: 0 40px
+        height: 70vh
+        display: flex
+        justify-content: center
+        align-items: center
+    .hidden
+        display: none
