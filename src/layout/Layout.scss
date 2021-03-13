@@ -1,0 +1,22 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  header {
+    position: relative;
+  }
+
+  main {
+    display: flex;
+    flex-grow: 1;
+
+    .Content {
+      position: relative;
+    }
+  }
+
+  footer {
+    position: relative;
+  }
+}

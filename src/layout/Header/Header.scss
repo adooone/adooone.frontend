@@ -1,0 +1,16 @@
+header {
+  display: flex;
+
+  .header_box {
+    display: flex;
+    width: 100%;
+  }
+
+  .header_box>.menu {
+    display: flex;
+
+    .items {
+      width: auto;
+    }
+  }
+}

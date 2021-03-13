@@ -1,1 +1,1 @@
-// Place here constants
+export * from './environment';

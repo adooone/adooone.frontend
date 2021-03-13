@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+
+  .bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .bar>.slogan {
+    flex-direction: row;
+  }
+
+  .bar .ft_items {
+    display: flex;
+  }
+}

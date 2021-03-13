@@ -1,0 +1,41 @@
+@use '~/styles/colors' as *;
+
+.appdata {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 25px;
+
+  div {
+    display: flex;
+    height: 17px;
+
+    .version {
+      margin: 0 15px;
+      color: $primary;
+      white-space: nowrap;
+      opacity: .5;
+      transition: all .3s ease;
+    }
+
+    &:hover {
+      .version {
+        opacity: 1;
+      }
+    }
+
+    .appname {
+      width: 80px;
+      color: transparentize(#000, .8);
+    }
+
+    .environment {
+      font-family: 'Indie Flower', serif;
+      white-space: nowrap;
+      opacity: .4;
+    }
+  }
+}
