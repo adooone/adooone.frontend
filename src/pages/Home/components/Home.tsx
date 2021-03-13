@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   return (
     <div className="Content">
       <div className={classnames('Home', { hidden: false })}>
-        <div className="central_text">Hello world</div>
+        <div className="central_text">Hello world!</div>
       </div>
     </div>
   );

@@ -1,5 +1,9 @@
+@use '~/styles/colors' as *;
+
 footer {
   display: flex;
+  height: 65px;
+  padding-top: 10px;
 
   .bar {
     display: flex;
