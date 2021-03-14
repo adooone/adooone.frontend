@@ -1,19 +1,39 @@
+import { motion } from 'framer-motion';
 import React, { FC } from 'react';
-import Slide from '~/shared/components/Slider/components/Slide';
-import './Slider.scss';
+import Controls from './components/Controls';
+import Slide from './components/Slide';
+import useSlider from './hooks/useSlider';
+import styles from './scss/slider.module.scss';
 
 interface SliderProps {
+  slides?: React.ReactNode[];
+  controlsAppearDelay?: number;
   className?: string;
 }
 
 interface Slider extends FC<SliderProps> {
-  Title: FC;
+  Slide: FC;
 }
 
-const Slider: Slider = ({ children }) => {
-  return <div className="Slider">{children}</div>;
+const Slider: Slider = ({ slides, controlsAppearDelay }) => {
+  const [index, handleMove] = useSlider();
+
+  if (!slides) return null;
+  return (
+    <div className={styles.slider}>
+      <div className={styles.slidesContainer}>
+        <Slide>{slides[index]}</Slide>
+      </div>
+      <Controls
+        disablePrevious={index === 0}
+        disableNext={index === slides.length - 1}
+        appearDelay={controlsAppearDelay}
+        onMove={handleMove}
+      />
+    </div>
+  );
 };
 
-Slider.Title = Slide;
+Slider.Slide = Slide;
 
 export default Slider;

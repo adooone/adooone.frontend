@@ -1,0 +1,14 @@
+.home {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  h1 {
+    font-size: 40px;
+  }
+}

@@ -5,7 +5,7 @@
 module.exports = {
   mount: {
     src: '/dist',
-    public: '/',
+    public: { url: '/', static: true, resolve: false },
   },
   alias: {
     '~': './src',
@@ -23,9 +23,10 @@ module.exports = {
     /* ... */
   },
   devOptions: {
-    /* ... */
+    // fallback: 'index.html',
   },
   buildOptions: {
     /* ... */
   },
+  routes: [{ match: 'routes', src: '.*', dest: '/index.html' }],
 };

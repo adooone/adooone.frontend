@@ -1,5 +1,5 @@
 import React from 'react';
-import './ItemScreen.scss';
+import styles from '../../scss/screens.module.scss';
 
 interface ItemScreenProps {
   heading: string;
@@ -8,7 +8,7 @@ interface ItemScreenProps {
 
 const ItemScreen: React.FC<ItemScreenProps> = ({ heading, description }) => {
   return (
-    <div className="item-screen">
+    <div className={styles.project}>
       <h3>{heading}</h3>
       <p>{description}</p>
     </div>

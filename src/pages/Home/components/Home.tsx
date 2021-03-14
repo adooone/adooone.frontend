@@ -1,22 +1,12 @@
-import React, { useEffect } from 'react';
-import classnames from 'classnames';
-import './Home.sass';
+import React from 'react';
+import Page from '~/shared/components/Page';
+import styles from './home.module.scss';
 
 const Home: React.FC = () => {
-  const didMount = () => {
-    // coreone.getList().then((response) => {
-    //   const [{ goods }] = response.data.dr;
-    //   setList(goods);
-    // });
-  };
-  useEffect(didMount, []);
-
   return (
-    <div className="Content">
-      <div className={classnames('Home', { hidden: false })}>
-        <div className="central_text">Hello world!</div>
-      </div>
-    </div>
+    <Page className={styles.home} contentClassName={styles.content}>
+      <h1>Hello World!</h1>
+    </Page>
   );
 };
 

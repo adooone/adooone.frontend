@@ -1,8 +1,8 @@
 import React from 'react';
-import './Slide.scss';
+import styles from '../scss/slide.module.scss';
 
 const Slide: React.FC = ({ children }) => {
-  return <div>{children}</div>;
+  return <div className={styles.slide}>{children}</div>;
 };
 
 export default Slide;

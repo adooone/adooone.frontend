@@ -19,9 +19,9 @@ const Page: React.FC<Props> = ({ children, className, contentClassName, title, t
     >
       {title && <h2>{title}</h2>}
       <motion.div
-        initial={{ opacity: 0, scale: 1.1 }}
+        initial={{ opacity: 0, scale: 1.01 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.2, ease: 'easeInOut' }}
+        transition={{ delay: 0.3, ease: 'easeInOut' }}
         className={classnames('content', contentClassName)}
       >
         {children}

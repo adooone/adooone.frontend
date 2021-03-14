@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
+import styles from './button.module.scss';
 
 interface Props {
   bordered?: boolean;
   contained?: boolean;
+  disabled?: boolean;
   caption: string;
   className?: string;
   onClick?: () => void;
@@ -12,6 +14,7 @@ interface Props {
 const AdooButton: React.FC<Props> = ({
   bordered,
   contained,
+  disabled,
   children,
   caption,
   onClick,
@@ -23,9 +26,10 @@ const AdooButton: React.FC<Props> = ({
     setClicked(true);
     setTimeout(() => setClicked(false), 500);
   };
+
   const borderedBtn = () => (
-    <div
-      role="presentation"
+    <button
+      disabled={disabled}
       className={classnames('bordered_btn', className, { clicked })}
       onClick={handleClick}
     >
@@ -33,17 +37,18 @@ const AdooButton: React.FC<Props> = ({
       <div className="effect2" />
       <div className="effect3" />
       {caption || children}
-    </div>
+    </button>
   );
+
   const containedBtn = () => (
-    <div
-      role="presentation"
-      className={classnames('contained_btn', className, { clicked })}
+    <button
+      className={classnames('contained_btn', styles.contained, className, { clicked })}
       onClick={handleClick}
     >
       {caption || children}
-    </div>
+    </button>
   );
+
   if (bordered) return borderedBtn();
   if (contained) return containedBtn();
   return (
