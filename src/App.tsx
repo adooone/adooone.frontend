@@ -1,10 +1,12 @@
 import React from 'react';
-import '~/styles/main.scss';
-import '~/styles/sass/main.sass';
 import { BrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 import Layout from '~/layout/Layout';
 import Routes from '~/pages/Routes';
+import '~/scss/main.scss';
+
+// TODO: remove sass files
+import '~/sass/main.sass';
 
 const App: React.FC = () => {
   return (

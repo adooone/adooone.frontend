@@ -5,11 +5,12 @@ import './Page.scss';
 
 interface Props {
   className?: string;
+  contentClassName?: string;
   title?: string;
   transparent?: boolean;
 }
 
-const Page: React.FC<Props> = ({ children, className, title, transparent }) => {
+const Page: React.FC<Props> = ({ children, className, contentClassName, title, transparent }) => {
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}
@@ -18,10 +19,10 @@ const Page: React.FC<Props> = ({ children, className, title, transparent }) => {
     >
       {title && <h2>{title}</h2>}
       <motion.div
-        initial={{ opacity: 0, scale: 1.2 }}
+        initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.2, ease: 'easeInOut' }}
-        className="content"
+        className={classnames('content', contentClassName)}
       >
         {children}
       </motion.div>

@@ -32,16 +32,17 @@ module.exports = {
         loader: 'eslint-loader',
       },
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
         test: /\.(png|svg|jpg|gif)$/,
         use: ['file-loader'],
       },
       {
-        test: [/\.sass$/, /\.scss$/],
-        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }],
+        test: [/\.scss$/],
+        use: [
+          { loader: 'style-loader' },
+          // { loader: 'css-modules-typescript-loader' },
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' },
+        ],
       },
     ],
   },

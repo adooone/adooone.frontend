@@ -2,13 +2,12 @@ import React from 'react';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import AppBackground from './Background';
-import './Layout.scss';
+import styles from './layout.module.scss';
 
 const Layout: React.FC = ({ children }) => {
   return (
-    <div className="layout">
+    <div className={styles.layout}>
       <AppBackground />
-      {/* <Loader /> */}
       <Header />
       <main>{children}</main>
       <Footer />

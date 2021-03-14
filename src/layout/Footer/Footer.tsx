@@ -2,12 +2,13 @@ import React from 'react';
 import FooterMenu from './components/FooterMenu';
 import Slogan from './components/Slogan';
 // import AppInfo from '~/shared/components/AppInfo';
-import './Footer.scss';
+import styles from './footer.module.scss';
+import './footer.scss';
 
 const Footer: React.FC = () => {
   return (
-    <footer>
-      <div className="footer_box bar">
+    <footer className={styles.footer}>
+      <div className={styles.bar}>
         <Slogan />
         <FooterMenu />
       </div>

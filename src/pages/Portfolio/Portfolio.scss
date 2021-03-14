@@ -2,4 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .portfolio-content {
+    display: flex;
+    width: auto;
+    height: 100%;
+    overflow: auto;
+  }
 }

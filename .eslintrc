@@ -6,20 +6,25 @@
   },
   "extends": [
     "eslint:recommended",
-    "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint",
+    // "prettier",
+    // "prettier/react",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
+    "prettier/@typescript-eslint",
     "plugin:prettier/recommended"
   ],
   "rules": {
     "react/prop-types": 0,
-    "import/order": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent"]
+      }
+    ],
     "import/default": 0
   },
   "settings": {

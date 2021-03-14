@@ -7,7 +7,13 @@ interface Props {
 
 const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
   return (
-    <svg width={width} height={height} viewBox="0 0 238 438" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 238 438"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <title>ooo</title>
       <defs>
         <radialGradient
@@ -29,9 +35,20 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
           <stop stopColor="#379752" offset="100%"></stop>
         </linearGradient>
         <circle id="path-3" cx="105.6" cy="105.2" r="105.2"></circle>
-        <filter x="-4.3%" y="-2.9%" width="108.6%" height="108.6%" filterUnits="objectBoundingBox" id="filter-4">
+        <filter
+          x="-4.3%"
+          y="-2.9%"
+          width="108.6%"
+          height="108.6%"
+          filterUnits="objectBoundingBox"
+          id="filter-4"
+        >
           <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-          <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+          <feGaussianBlur
+            stdDeviation="2.5"
+            in="shadowOffsetOuter1"
+            result="shadowBlurOuter1"
+          ></feGaussianBlur>
           <feColorMatrix
             values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.18627076 0"
             type="matrix"
@@ -39,23 +56,51 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
           ></feColorMatrix>
         </filter>
         <circle id="path-5" cx="105.6" cy="210.4" r="105.2"></circle>
-        <filter x="-4.3%" y="-2.9%" width="108.6%" height="108.6%" filterUnits="objectBoundingBox" id="filter-6">
+        <filter
+          x="-4.3%"
+          y="-2.9%"
+          width="108.6%"
+          height="108.6%"
+          filterUnits="objectBoundingBox"
+          id="filter-6"
+        >
           <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-          <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+          <feGaussianBlur
+            stdDeviation="2.5"
+            in="shadowOffsetOuter1"
+            result="shadowBlurOuter1"
+          ></feGaussianBlur>
           <feColorMatrix
             values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.18627076 0"
             type="matrix"
             in="shadowBlurOuter1"
           ></feColorMatrix>
         </filter>
-        <linearGradient x1="85.05123%" y1="85.1984561%" x2="13.0921665%" y2="18.3523168%" id="linearGradient-7">
+        <linearGradient
+          x1="85.05123%"
+          y1="85.1984561%"
+          x2="13.0921665%"
+          y2="18.3523168%"
+          id="linearGradient-7"
+        >
           <stop stopColor="#13655C" offset="0%"></stop>
           <stop stopColor="#379752" offset="100%"></stop>
         </linearGradient>
         <circle id="path-8" cx="105.4" cy="315.593834" r="105.2"></circle>
-        <filter x="-11.4%" y="-5.7%" width="122.8%" height="122.8%" filterUnits="objectBoundingBox" id="filter-9">
+        <filter
+          x="-11.4%"
+          y="-5.7%"
+          width="122.8%"
+          height="122.8%"
+          filterUnits="objectBoundingBox"
+          id="filter-9"
+        >
           <feOffset dx="0" dy="12" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-          <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+          <feGaussianBlur
+            stdDeviation="6"
+            in="shadowOffsetOuter1"
+            result="shadowBlurOuter1"
+          ></feGaussianBlur>
           <feColorMatrix
             values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.262347028 0"
             type="matrix"

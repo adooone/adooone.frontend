@@ -9,7 +9,14 @@ interface Props {
   onClick?: () => void;
 }
 
-const AdooButton: React.FC<Props> = ({ bordered, contained, children, caption, onClick, className }) => {
+const AdooButton: React.FC<Props> = ({
+  bordered,
+  contained,
+  children,
+  caption,
+  onClick,
+  className,
+}) => {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
     onClick && onClick();
@@ -17,7 +24,11 @@ const AdooButton: React.FC<Props> = ({ bordered, contained, children, caption, o
     setTimeout(() => setClicked(false), 500);
   };
   const borderedBtn = () => (
-    <div role="presentation" className={classnames('bordered_btn', className, { clicked })} onClick={handleClick}>
+    <div
+      role="presentation"
+      className={classnames('bordered_btn', className, { clicked })}
+      onClick={handleClick}
+    >
       <div className="effect" />
       <div className="effect2" />
       <div className="effect3" />
@@ -25,7 +36,11 @@ const AdooButton: React.FC<Props> = ({ bordered, contained, children, caption, o
     </div>
   );
   const containedBtn = () => (
-    <div role="presentation" className={classnames('contained_btn', className, { clicked })} onClick={handleClick}>
+    <div
+      role="presentation"
+      className={classnames('contained_btn', className, { clicked })}
+      onClick={handleClick}
+    >
       {caption || children}
     </div>
   );
