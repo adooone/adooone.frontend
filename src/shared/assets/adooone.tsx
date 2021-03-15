@@ -1,11 +1,32 @@
+import { motion, Transition, Variants } from 'framer-motion';
 import React from 'react';
+import { useRecoilValue } from 'recoil';
+import { userPreferences } from '~/core/store/atoms/user';
 
 interface Props {
   width?: string;
   height?: string;
 }
 
+const circleVariants: Variants = {
+  hide: { opacity: 0, y: -10 },
+  appear: { opacity: 1, y: 0 },
+};
+
+const circleProps = (index: number) => ({
+  cx: '177.46',
+  cy: `${112.563 + index * 63}`,
+  r: '86.5159',
+});
+
+const getDelayedTransition = (index: number): Transition => {
+  return { duration: 0.4, delay: index * 0.3 + 0.5, ease: 'easeOut' };
+};
+
 const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
+  const isDark = useRecoilValue(userPreferences.theme) === 'dark';
+  const gradient = isDark ? 'lightGradient' : 'darkGradient';
+
   return (
     <svg
       width={width}
@@ -14,33 +35,41 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g opacity="0.2" filter="url(#filter0_d)">
+      <motion.g
+        initial="hide"
+        animate="appear"
+        variants={circleVariants}
+        transition={getDelayedTransition(2)}
+        filter="url(#filter0_d)"
+      >
         <circle
-          cx="177.46"
-          cy="112.563"
-          r="86.5159"
-          transform="rotate(90 177.46 112.563)"
-          fill="url(#paint0_linear)"
+          {...circleProps(0)}
+          opacity={isDark ? '0.3' : '0.1'}
+          fill={`url(#${gradient})`}
         />
-      </g>
-      <g opacity="0.5" filter="url(#filter1_d)">
+      </motion.g>
+      <motion.g
+        initial="hide"
+        animate="appear"
+        variants={circleVariants}
+        transition={getDelayedTransition(1)}
+        filter="url(#filter1_d)"
+      >
         <circle
-          cx="177.461"
-          cy="175.706"
-          r="86.5159"
-          transform="rotate(90 177.461 175.706)"
-          fill="url(#paint1_linear)"
+          {...circleProps(1)}
+          opacity={isDark ? '0.6' : '0.3'}
+          fill={`url(#${gradient})`}
         />
-      </g>
-      <g filter="url(#filter2_d)">
-        <circle
-          cx="177.285"
-          cy="241.629"
-          r="86.5159"
-          transform="rotate(90 177.285 241.629)"
-          fill="url(#paint2_linear)"
-        />
-      </g>
+      </motion.g>
+      <motion.g
+        initial="hide"
+        animate="appear"
+        variants={circleVariants}
+        transition={getDelayedTransition(0)}
+        filter="url(#filter2_d)"
+      >
+        <circle {...circleProps(2)} fill={`url(#${gradient})`} />
+      </motion.g>
       <defs>
         <filter
           id="filter0_d"
@@ -142,7 +171,7 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
           />
         </filter>
         <linearGradient
-          id="paint0_linear"
+          id="lightGradient"
           x1="90.9446"
           y1="32.8771"
           x2="236.656"
@@ -153,26 +182,15 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
           <stop offset="1" stopColor="white" />
         </linearGradient>
         <linearGradient
-          id="paint1_linear"
-          x1="90.9447"
-          y1="96.0206"
+          id="darkGradient"
+          x1="90.9446"
+          y1="32.8771"
           x2="236.656"
-          y2="292.958"
+          y2="229.815"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#E2E2E2" />
-          <stop offset="1" stopColor="white" />
-        </linearGradient>
-        <linearGradient
-          id="paint2_linear"
-          x1="90.7693"
-          y1="161.943"
-          x2="236.48"
-          y2="358.881"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#E2E2E2" />
-          <stop offset="1" stopColor="white" />
+          <stop stopColor="#202020" />
+          <stop offset="1" stopColor="#202020" />
         </linearGradient>
       </defs>
     </svg>
