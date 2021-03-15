@@ -3,7 +3,6 @@ import FooterMenu from './components/FooterMenu';
 import Slogan from './components/Slogan';
 // import AppInfo from '~/shared/components/AppInfo';
 import styles from './footer.module.scss';
-import './footer.scss';
 
 const Footer: React.FC = () => {
   return (
