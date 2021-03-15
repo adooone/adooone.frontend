@@ -16,8 +16,7 @@ const Portfolio: React.FC = () => {
   useTheme(theme);
 
   const handleSlideChanged = (index: number) => {
-    if (index === 0) setTheme('dark');
-    if (index === 1) setTheme('light');
+    setTheme(portfolio[index].theme);
   };
 
   return (

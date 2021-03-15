@@ -25,7 +25,8 @@ const getDelayedTransition = (index: number): Transition => {
 
 const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
   const isDark = useRecoilValue(userPreferences.theme) === 'dark';
-  const gradient = isDark ? 'lightGradient' : 'darkGradient';
+  // const gradient = isDark ? 'lightGradient' : 'darkGradient';
+  const gradient = isDark ? 'darkGreenGradient' : 'lightGreenGradient';
 
   return (
     <svg
@@ -40,11 +41,11 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
         animate="appear"
         variants={circleVariants}
         transition={getDelayedTransition(2)}
-        filter="url(#filter0_d)"
+        // filter="url(#filter0_d)"
       >
         <circle
           {...circleProps(0)}
-          opacity={isDark ? '0.3' : '0.1'}
+          opacity={isDark ? '0.2' : '0.1'}
           fill={`url(#${gradient})`}
         />
       </motion.g>
@@ -53,11 +54,11 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
         animate="appear"
         variants={circleVariants}
         transition={getDelayedTransition(1)}
-        filter="url(#filter1_d)"
+        // filter="url(#filter1_d)"
       >
         <circle
           {...circleProps(1)}
-          opacity={isDark ? '0.6' : '0.3'}
+          opacity={isDark ? '0.5' : '0.3'}
           fill={`url(#${gradient})`}
         />
       </motion.g>
@@ -66,7 +67,7 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
         animate="appear"
         variants={circleVariants}
         transition={getDelayedTransition(0)}
-        filter="url(#filter2_d)"
+        // filter="url(#filter2_d)"
       >
         <circle {...circleProps(2)} fill={`url(#${gradient})`} />
       </motion.g>
@@ -191,6 +192,28 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
         >
           <stop stopColor="#202020" />
           <stop offset="1" stopColor="#202020" />
+        </linearGradient>
+        <linearGradient
+          id="darkGreenGradient"
+          x1="85.2441"
+          y1="163.848"
+          x2="239.986"
+          y2="372.991"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#379752" />
+          <stop offset="1" stopColor="#07545F" />
+        </linearGradient>
+        <linearGradient
+          id="lightGreenGradient"
+          x1="85.2441"
+          y1="163.848"
+          x2="239.986"
+          y2="372.991"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#37b762" />
+          <stop offset="1" stopColor="#12746F" />
         </linearGradient>
       </defs>
     </svg>
