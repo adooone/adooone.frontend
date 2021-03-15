@@ -1,4 +1,4 @@
-export const FooterDescription = [
+export const footerDescription = [
   {
     name: 'risin',
     caption: 'Risin',

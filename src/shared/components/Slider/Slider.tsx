@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import React, { FC } from 'react';
 import Controls from './components/Controls';
 import Slide from './components/Slide';
@@ -9,20 +8,21 @@ interface SliderProps {
   slides?: React.ReactNode[];
   controlsAppearDelay?: number;
   className?: string;
+  onItemChanged?: (index: number) => void;
 }
 
 interface Slider extends FC<SliderProps> {
   Slide: FC;
 }
 
-const Slider: Slider = ({ slides, controlsAppearDelay }) => {
-  const [index, handleMove] = useSlider();
+const Slider: Slider = ({ slides, controlsAppearDelay, onItemChanged }) => {
+  const [index, handleMove] = useSlider({ onItemChanged });
 
   if (!slides) return null;
   return (
     <div className={styles.slider}>
       <div className={styles.slidesContainer}>
-        <Slide>{slides[index]}</Slide>
+        <Slide key={index}>{slides[index]}</Slide>
       </div>
       <Controls
         disablePrevious={index === 0}

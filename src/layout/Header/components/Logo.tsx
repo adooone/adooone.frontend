@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import AdoooneLogo from '~/shared/assets/adooone';
 
 const Logo: React.FC = () => {
   return (
-    <div role="presentation" className="logo">
-      <AdoooneLogo />
-      Adooone
+    <div className="logo">
+      <Link to="/">
+        <AdoooneLogo />
+        Adooone
+      </Link>
     </div>
   );
 };

@@ -42,6 +42,7 @@ const AdooButton: React.FC<Props> = ({
 
   const containedBtn = () => (
     <button
+      disabled={disabled}
       className={classnames('contained_btn', styles.contained, className, { clicked })}
       onClick={handleClick}
     >
@@ -52,9 +53,9 @@ const AdooButton: React.FC<Props> = ({
   if (bordered) return borderedBtn();
   if (contained) return containedBtn();
   return (
-    <div role="presentation" className="adoo_button" onClick={onClick}>
+    <button disabled={disabled} className="adoo_button" onClick={onClick}>
       {caption}
-    </div>
+    </button>
   );
 };
 

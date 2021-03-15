@@ -1,3 +1,5 @@
+@use '../../scss/colors' as *;
+
 header {
   display: flex;
 
@@ -6,7 +8,7 @@ header {
     width: 100%;
   }
 
-  .header_box>.menu {
+  .header_box > .menu {
     display: flex;
 
     .items {
@@ -15,6 +17,11 @@ header {
   }
 
   .logo {
+    a {
+      display: flex;
+      align-items: center;
+    }
+
     svg {
       margin-right: 6px;
     }

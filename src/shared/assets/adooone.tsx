@@ -110,9 +110,6 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
       </defs>
       <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g id="Home-Page-FullHD-Copy" transform="translate(-830.000000, -300.000000)">
-          <g id="Background" fill="url(#radialGradient-1)" opacity="0.446707589">
-            <rect id="Rectangle" x="0" y="0" width="1920" height="1080"></rect>
-          </g>
           <g id="logo-group" transform="translate(847.000000, 305.000000)" fillRule="nonzero">
             <g id="ooo" transform="translate(7.600000, 0.000000)">
               <g
