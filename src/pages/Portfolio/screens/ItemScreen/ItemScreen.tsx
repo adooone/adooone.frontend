@@ -9,7 +9,11 @@ interface ItemScreenProps {
   logo: string;
 }
 
-const ItemScreen: React.FC<ItemScreenProps> = ({ heading, description, logo }) => {
+const ItemScreen: React.FC<ItemScreenProps> = ({
+  heading,
+  description,
+  logo,
+}) => {
   return (
     <motion.div
       variants={variants}

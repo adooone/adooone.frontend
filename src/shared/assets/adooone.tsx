@@ -26,11 +26,25 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
           id="radialGradient-1"
         >
           <stop stopColor="#282828" stopOpacity="0" offset="0%"></stop>
-          <stop stopColor="#1F1F20" stopOpacity="0.319431949" offset="4.91712416%"></stop>
-          <stop stopColor="#0F0F10" stopOpacity="0.896442067" offset="62.1595228%"></stop>
+          <stop
+            stopColor="#1F1F20"
+            stopOpacity="0.319431949"
+            offset="4.91712416%"
+          ></stop>
+          <stop
+            stopColor="#0F0F10"
+            stopOpacity="0.896442067"
+            offset="62.1595228%"
+          ></stop>
           <stop stopColor="#0D0D0E" offset="100%"></stop>
         </radialGradient>
-        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-2">
+        <linearGradient
+          x1="100%"
+          y1="100%"
+          x2="0%"
+          y2="0%"
+          id="linearGradient-2"
+        >
           <stop stopColor="#13655C" offset="0%"></stop>
           <stop stopColor="#379752" offset="100%"></stop>
         </linearGradient>
@@ -43,7 +57,12 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
           filterUnits="objectBoundingBox"
           id="filter-4"
         >
-          <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+          <feOffset
+            dx="0"
+            dy="3"
+            in="SourceAlpha"
+            result="shadowOffsetOuter1"
+          ></feOffset>
           <feGaussianBlur
             stdDeviation="2.5"
             in="shadowOffsetOuter1"
@@ -64,7 +83,12 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
           filterUnits="objectBoundingBox"
           id="filter-6"
         >
-          <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+          <feOffset
+            dx="0"
+            dy="3"
+            in="SourceAlpha"
+            result="shadowOffsetOuter1"
+          ></feOffset>
           <feGaussianBlur
             stdDeviation="2.5"
             in="shadowOffsetOuter1"
@@ -95,7 +119,12 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
           filterUnits="objectBoundingBox"
           id="filter-9"
         >
-          <feOffset dx="0" dy="12" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+          <feOffset
+            dx="0"
+            dy="12"
+            in="SourceAlpha"
+            result="shadowOffsetOuter1"
+          ></feOffset>
           <feGaussianBlur
             stdDeviation="6"
             in="shadowOffsetOuter1"
@@ -108,16 +137,34 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
           ></feColorMatrix>
         </filter>
       </defs>
-      <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-        <g id="Home-Page-FullHD-Copy" transform="translate(-830.000000, -300.000000)">
-          <g id="logo-group" transform="translate(847.000000, 305.000000)" fillRule="nonzero">
+      <g
+        id="Page-1"
+        stroke="none"
+        strokeWidth="1"
+        fill="none"
+        fillRule="evenodd"
+      >
+        <g
+          id="Home-Page-FullHD-Copy"
+          transform="translate(-830.000000, -300.000000)"
+        >
+          <g
+            id="logo-group"
+            transform="translate(847.000000, 305.000000)"
+            fillRule="nonzero"
+          >
             <g id="ooo" transform="translate(7.600000, 0.000000)">
               <g
                 id="Oval-Copy-5"
                 opacity="0.0980515253"
                 transform="translate(105.600000, 105.200000) rotate(90.000000) translate(-105.600000, -105.200000) "
               >
-                <use fill="black" fillOpacity="1" filter="url(#filter-4)" xlinkHref="#path-3"></use>
+                <use
+                  fill="black"
+                  fillOpacity="1"
+                  filter="url(#filter-4)"
+                  xlinkHref="#path-3"
+                ></use>
                 <use fill="url(#linearGradient-2)" xlinkHref="#path-3"></use>
               </g>
               <g
@@ -125,14 +172,24 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
                 opacity="0.397530692"
                 transform="translate(105.600000, 210.400000) rotate(90.000000) translate(-105.600000, -210.400000) "
               >
-                <use fill="black" fillOpacity="1" filter="url(#filter-6)" xlinkHref="#path-5"></use>
+                <use
+                  fill="black"
+                  fillOpacity="1"
+                  filter="url(#filter-6)"
+                  xlinkHref="#path-5"
+                ></use>
                 <use fill="url(#linearGradient-2)" xlinkHref="#path-5"></use>
               </g>
               <g
                 id="Oval"
                 transform="translate(105.400000, 315.593834) rotate(90.000000) translate(-105.400000, -315.593834) "
               >
-                <use fill="black" fillOpacity="1" filter="url(#filter-9)" xlinkHref="#path-8"></use>
+                <use
+                  fill="black"
+                  fillOpacity="1"
+                  filter="url(#filter-9)"
+                  xlinkHref="#path-8"
+                ></use>
                 <use fill="url(#linearGradient-7)" xlinkHref="#path-8"></use>
               </g>
             </g>

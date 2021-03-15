@@ -6,7 +6,9 @@ interface UseSliderProps {
 }
 type UseSlider = [number, (direction: DirectionType) => void];
 
-export default function useSlider({ onItemChanged }: UseSliderProps): UseSlider {
+export default function useSlider({
+  onItemChanged,
+}: UseSliderProps): UseSlider {
   const [index, setIndex] = useState(0);
 
   const handleMove = (direction: DirectionType) => {

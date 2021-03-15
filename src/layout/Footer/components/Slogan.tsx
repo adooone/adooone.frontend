@@ -6,7 +6,8 @@ const Slogan: React.FC = () => {
   const location = useLocation();
 
   // TODO: make theme independent from store on this pages
-  const themeSwitchDisabled = location.pathname.includes('portfolio') || location.pathname === '/';
+  const themeSwitchDisabled =
+    location.pathname.includes('portfolio') || location.pathname === '/';
 
   return (
     <div className="slogan">

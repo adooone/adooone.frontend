@@ -10,7 +10,13 @@ interface Props {
   transparent?: boolean;
 }
 
-const Page: React.FC<Props> = ({ children, className, contentClassName, title, transparent }) => {
+const Page: React.FC<Props> = ({
+  children,
+  className,
+  contentClassName,
+  title,
+  transparent,
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}

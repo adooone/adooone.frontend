@@ -10,7 +10,13 @@ const TabletSvg: React.FC = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g clipPath="url(#clip0)">
-        <ellipse cx="650" cy="145.5" rx="1015" ry="84.5" fill="url(#paint0_radial)" />
+        <ellipse
+          cx="650"
+          cy="145.5"
+          rx="1015"
+          ry="84.5"
+          fill="url(#paint0_radial)"
+        />
         <path
           opacity="0.206613"
           fillRule="evenodd"
@@ -81,7 +87,12 @@ const TabletSvg: React.FC = () => {
           <stop offset="1" stopColor="#050506" />
         </linearGradient>
         <clipPath id="clip0">
-          <rect width="1920" height="344" fill="white" transform="translate(-332)" />
+          <rect
+            width="1920"
+            height="344"
+            fill="white"
+            transform="translate(-332)"
+          />
         </clipPath>
       </defs>
     </svg>

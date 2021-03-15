@@ -43,7 +43,9 @@ const AdooButton: React.FC<Props> = ({
   const containedBtn = () => (
     <button
       disabled={disabled}
-      className={classnames('contained_btn', styles.contained, className, { clicked })}
+      className={classnames('contained_btn', styles.contained, className, {
+        clicked,
+      })}
       onClick={handleClick}
     >
       {caption || children}

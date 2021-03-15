@@ -32,7 +32,12 @@ const ThemeSwitcher: React.FC<Props> = ({ disabled }) => {
 
   return (
     <div className="ThemeSwitcher">
-      <AdooButton disabled={disabled} caption={theme || 'switch'} onClick={handleSwitch} bordered />
+      <AdooButton
+        disabled={disabled}
+        caption={theme || 'switch'}
+        onClick={handleSwitch}
+        bordered
+      />
     </div>
   );
 };
