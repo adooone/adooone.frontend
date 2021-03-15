@@ -1,9 +1,22 @@
 import React from 'react';
+import team from './data';
 import Page from '~/shared/components/Page';
-import './Team.scss';
+import styles from './team.module.scss';
+import PersonCard from './components/PersonCard';
 
 const Team: React.FC = () => {
-  return <Page className="team-page">Team</Page>;
+  return (
+    <Page className={styles.team} contentClassName={styles.content}>
+      {team.map((person) => (
+        <PersonCard
+          key={person.id}
+          bio={person.bio}
+          name={person.name}
+          position={person.position}
+        />
+      ))}
+    </Page>
+  );
 };
 
 export default Team;

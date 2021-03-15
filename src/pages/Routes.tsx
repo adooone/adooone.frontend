@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { useSetRecoilState } from 'recoil';
 import Home from './Home';
-import Portfolio from '~/pages/Portfolio/Portfolio';
-import Team from '~/pages/Team/Team';
+import Portfolio from '~/pages/Portfolio';
+import Team from '~/pages/Team';
 import { viewState } from '~/core/store/atoms/view';
 
 const Routes: React.FC = () => {
