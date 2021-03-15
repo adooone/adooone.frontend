@@ -10,192 +10,171 @@ const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
     <svg
       width={width}
       height={height}
-      viewBox="0 0 238 438"
-      version="1.1"
+      viewBox="0 0 354 354"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>ooo</title>
-      <defs>
-        <radialGradient
-          cx="50%"
-          cy="50%"
-          fx="50%"
-          fy="50%"
-          r="57.3053773%"
-          gradientTransform="translate(0.500000,0.500000),scale(0.562500,1.000000),rotate(90.000000),scale(1.000000,1.289292),translate(-0.500000,-0.500000)"
-          id="radialGradient-1"
-        >
-          <stop stopColor="#282828" stopOpacity="0" offset="0%"></stop>
-          <stop
-            stopColor="#1F1F20"
-            stopOpacity="0.319431949"
-            offset="4.91712416%"
-          ></stop>
-          <stop
-            stopColor="#0F0F10"
-            stopOpacity="0.896442067"
-            offset="62.1595228%"
-          ></stop>
-          <stop stopColor="#0D0D0E" offset="100%"></stop>
-        </radialGradient>
-        <linearGradient
-          x1="100%"
-          y1="100%"
-          x2="0%"
-          y2="0%"
-          id="linearGradient-2"
-        >
-          <stop stopColor="#13655C" offset="0%"></stop>
-          <stop stopColor="#379752" offset="100%"></stop>
-        </linearGradient>
-        <circle id="path-3" cx="105.6" cy="105.2" r="105.2"></circle>
-        <filter
-          x="-4.3%"
-          y="-2.9%"
-          width="108.6%"
-          height="108.6%"
-          filterUnits="objectBoundingBox"
-          id="filter-4"
-        >
-          <feOffset
-            dx="0"
-            dy="3"
-            in="SourceAlpha"
-            result="shadowOffsetOuter1"
-          ></feOffset>
-          <feGaussianBlur
-            stdDeviation="2.5"
-            in="shadowOffsetOuter1"
-            result="shadowBlurOuter1"
-          ></feGaussianBlur>
-          <feColorMatrix
-            values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.18627076 0"
-            type="matrix"
-            in="shadowBlurOuter1"
-          ></feColorMatrix>
-        </filter>
-        <circle id="path-5" cx="105.6" cy="210.4" r="105.2"></circle>
-        <filter
-          x="-4.3%"
-          y="-2.9%"
-          width="108.6%"
-          height="108.6%"
-          filterUnits="objectBoundingBox"
-          id="filter-6"
-        >
-          <feOffset
-            dx="0"
-            dy="3"
-            in="SourceAlpha"
-            result="shadowOffsetOuter1"
-          ></feOffset>
-          <feGaussianBlur
-            stdDeviation="2.5"
-            in="shadowOffsetOuter1"
-            result="shadowBlurOuter1"
-          ></feGaussianBlur>
-          <feColorMatrix
-            values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.18627076 0"
-            type="matrix"
-            in="shadowBlurOuter1"
-          ></feColorMatrix>
-        </filter>
-        <linearGradient
-          x1="85.05123%"
-          y1="85.1984561%"
-          x2="13.0921665%"
-          y2="18.3523168%"
-          id="linearGradient-7"
-        >
-          <stop stopColor="#13655C" offset="0%"></stop>
-          <stop stopColor="#379752" offset="100%"></stop>
-        </linearGradient>
-        <circle id="path-8" cx="105.4" cy="315.593834" r="105.2"></circle>
-        <filter
-          x="-11.4%"
-          y="-5.7%"
-          width="122.8%"
-          height="122.8%"
-          filterUnits="objectBoundingBox"
-          id="filter-9"
-        >
-          <feOffset
-            dx="0"
-            dy="12"
-            in="SourceAlpha"
-            result="shadowOffsetOuter1"
-          ></feOffset>
-          <feGaussianBlur
-            stdDeviation="6"
-            in="shadowOffsetOuter1"
-            result="shadowBlurOuter1"
-          ></feGaussianBlur>
-          <feColorMatrix
-            values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.262347028 0"
-            type="matrix"
-            in="shadowBlurOuter1"
-          ></feColorMatrix>
-        </filter>
-      </defs>
-      <g
-        id="Page-1"
-        stroke="none"
-        strokeWidth="1"
-        fill="none"
-        fillRule="evenodd"
-      >
-        <g
-          id="Home-Page-FullHD-Copy"
-          transform="translate(-830.000000, -300.000000)"
-        >
-          <g
-            id="logo-group"
-            transform="translate(847.000000, 305.000000)"
-            fillRule="nonzero"
-          >
-            <g id="ooo" transform="translate(7.600000, 0.000000)">
-              <g
-                id="Oval-Copy-5"
-                opacity="0.0980515253"
-                transform="translate(105.600000, 105.200000) rotate(90.000000) translate(-105.600000, -105.200000) "
-              >
-                <use
-                  fill="black"
-                  fillOpacity="1"
-                  filter="url(#filter-4)"
-                  xlinkHref="#path-3"
-                ></use>
-                <use fill="url(#linearGradient-2)" xlinkHref="#path-3"></use>
-              </g>
-              <g
-                id="Oval-Copy-4"
-                opacity="0.397530692"
-                transform="translate(105.600000, 210.400000) rotate(90.000000) translate(-105.600000, -210.400000) "
-              >
-                <use
-                  fill="black"
-                  fillOpacity="1"
-                  filter="url(#filter-6)"
-                  xlinkHref="#path-5"
-                ></use>
-                <use fill="url(#linearGradient-2)" xlinkHref="#path-5"></use>
-              </g>
-              <g
-                id="Oval"
-                transform="translate(105.400000, 315.593834) rotate(90.000000) translate(-105.400000, -315.593834) "
-              >
-                <use
-                  fill="black"
-                  fillOpacity="1"
-                  filter="url(#filter-9)"
-                  xlinkHref="#path-8"
-                ></use>
-                <use fill="url(#linearGradient-7)" xlinkHref="#path-8"></use>
-              </g>
-            </g>
-          </g>
-        </g>
+      <g opacity="0.2" filter="url(#filter0_d)">
+        <circle
+          cx="177.46"
+          cy="112.563"
+          r="86.5159"
+          transform="rotate(90 177.46 112.563)"
+          fill="url(#paint0_linear)"
+        />
       </g>
+      <g opacity="0.5" filter="url(#filter1_d)">
+        <circle
+          cx="177.461"
+          cy="175.706"
+          r="86.5159"
+          transform="rotate(90 177.461 175.706)"
+          fill="url(#paint1_linear)"
+        />
+      </g>
+      <g filter="url(#filter2_d)">
+        <circle
+          cx="177.285"
+          cy="241.629"
+          r="86.5159"
+          transform="rotate(90 177.285 241.629)"
+          fill="url(#paint2_linear)"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d"
+          x="85.9446"
+          y="21.0469"
+          width="183.032"
+          height="183.032"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="2.5" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow"
+            result="shape"
+          />
+        </filter>
+        <filter
+          id="filter1_d"
+          x="85.9447"
+          y="84.1904"
+          width="183.032"
+          height="183.032"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="2.5" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow"
+            result="shape"
+          />
+        </filter>
+        <filter
+          id="filter2_d"
+          x="85.7693"
+          y="150.113"
+          width="183.032"
+          height="183.032"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="2.5" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow"
+            result="shape"
+          />
+        </filter>
+        <linearGradient
+          id="paint0_linear"
+          x1="90.9446"
+          y1="32.8771"
+          x2="236.656"
+          y2="229.815"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#E2E2E2" />
+          <stop offset="1" stopColor="white" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear"
+          x1="90.9447"
+          y1="96.0206"
+          x2="236.656"
+          y2="292.958"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#E2E2E2" />
+          <stop offset="1" stopColor="white" />
+        </linearGradient>
+        <linearGradient
+          id="paint2_linear"
+          x1="90.7693"
+          y1="161.943"
+          x2="236.48"
+          y2="358.881"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#E2E2E2" />
+          <stop offset="1" stopColor="white" />
+        </linearGradient>
+      </defs>
     </svg>
   );
 };

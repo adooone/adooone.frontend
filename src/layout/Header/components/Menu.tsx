@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from '../header.module.scss';
 import AdooButton from '~/shared/components/AdooButton/AdooButton';
 
 const Menu: React.FC = () => {
   return (
-    <div className="menu">
-      <div className="items">
+    <div className={styles.menu}>
+      <div className={styles.items}>
         <Link to="/">
           <AdooButton bordered caption="HOME" />
         </Link>

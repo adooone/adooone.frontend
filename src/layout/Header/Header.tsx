@@ -1,15 +1,13 @@
 import React from 'react';
 import Menu from './components/Menu';
 import Logo from './components/Logo';
-import './Header.scss';
+import styles from './header.module.scss';
 
 const Header: React.FC = () => {
   return (
-    <header>
-      <div className="header_box">
-        <Logo />
-        <Menu />
-      </div>
+    <header className={styles.header}>
+      <Logo />
+      <Menu />
     </header>
   );
 };

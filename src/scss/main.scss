@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--text-color);
+  font-size: 14px;
   // font-family: 'Montserrat', sans-serif;
   font-family: 'Josefin Sans', sans-serif;
   transition: color 0.3s ease;
@@ -15,6 +16,7 @@ body {
   button, a {
     color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
     // font-family: 'Courier Prime', monospace;
     // font-family: 'Anka/Coder', sans-serif;
     background-color: transparent;

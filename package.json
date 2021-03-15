@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack s -c webpack/webpack.js",
-    "build": "webpack -c webpack/webpack.js",
-    "start": "snowpack dev",
-    "snow": "snowpack build",
+    "dev": "snowpack dev",
+    "build": "snowpack build",
+    "webpack": "webpack -c webpack/webpack.js",
+    "webpack:server": "webpack s -c webpack/webpack.js",
     "lint": "eslint",
     "lint:fix": "eslint \"src/**/*.{ts,tsx}\" -c .eslintrc --fix"
   },
