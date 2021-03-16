@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classnames from 'classnames';
-import styles from './button.module.scss';
+import button from './button.module.scss';
+import Bordered from '~/shared/components/AdooButton/Bordered';
 
 interface Props {
   bordered?: boolean;
@@ -20,42 +21,32 @@ const AdooButton: React.FC<Props> = ({
   onClick,
   className,
 }) => {
-  const [clicked, setClicked] = useState(false);
-  const handleClick = () => {
+  const handleClick = async () => {
     onClick && onClick();
-    setClicked(true);
-    setTimeout(() => setClicked(false), 500);
   };
-
-  const borderedBtn = () => (
-    <button
-      disabled={disabled}
-      className={classnames('bordered_btn', className, { clicked })}
-      onClick={handleClick}
-    >
-      <div className="effect" />
-      <div className="effect2" />
-      <div className="effect3" />
-      {caption || children}
-    </button>
-  );
 
   const containedBtn = () => (
     <button
       disabled={disabled}
-      className={classnames('contained_btn', styles.contained, className, {
-        clicked,
-      })}
+      className={classnames(button.contained, className)}
       onClick={handleClick}
     >
       {caption || children}
     </button>
   );
 
-  if (bordered) return borderedBtn();
+  if (bordered)
+    return (
+      <Bordered
+        className={className}
+        caption={caption}
+        onClick={onClick}
+        disabled={disabled}
+      />
+    );
   if (contained) return containedBtn();
   return (
-    <button disabled={disabled} className="adoo_button" onClick={onClick}>
+    <button disabled={disabled} onClick={onClick}>
       {caption}
     </button>
   );

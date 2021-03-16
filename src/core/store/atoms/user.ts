@@ -7,7 +7,7 @@ const { persistAtom } = recoilPersist();
 export const userPreferences = {
   theme: atom<Theme>({
     effects_UNSTABLE: [persistAtom],
-    key: 'preferences',
+    key: 'theme',
     default: null,
   }),
 };
