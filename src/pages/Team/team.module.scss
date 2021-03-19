@@ -16,11 +16,13 @@
 
 .card {
   display: flex;
+  align-items: center;
   width: 50%;
   padding: 20px;
 
   h4 {
     font-size: 24px;
+    margin: 7px 0;
   }
 
   p {
@@ -29,9 +31,26 @@
   }
 }
 
+.right {
+  color: green;
+  align-self: flex-end;
+  flex-direction: row-reverse;
+  h4 {
+    text-align: end;
+  }
+  p {
+    text-align: end;
+  }
+}
+
 .avatar {
-  width: 80px;
-  height: 80px;
+  min-width: 130px;
+  height: 130px;
   background-color: #303030;
-  border-radius: 40px;
+  border-radius: 50%;
+  box-shadow: -20px 0 0 0px green, -40px 0 0 0px darkolivegreen;
+}
+
+.person {
+  padding: 18px;
 }

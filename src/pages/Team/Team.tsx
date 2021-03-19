@@ -7,8 +7,9 @@ import PersonCard from './components/PersonCard';
 const Team: React.FC = () => {
   return (
     <Page className={styles.team} contentClassName={styles.content}>
-      {team.map((person) => (
+      {team.map((person, id) => (
         <PersonCard
+          right={id % 2 === 1}
           key={person.id}
           bio={person.bio}
           name={person.name}
