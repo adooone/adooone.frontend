@@ -21,8 +21,24 @@ const PersonCard: React.FC<Props> = ({
 }) => {
   return (
     <div className={classNames(styles.card, { [styles.right]: right })}>
-      <div className={classNames(styles.avatar, { [styles.avRight]: avRight })}>
-        <img src={avatar} alt="err" />
+      <div
+        className={classNames(styles.avatarContainer, {
+          [styles.avRight]: avRight,
+        })}
+      >
+        <div className={classNames(styles.circle, styles.circle1)}>
+          <img src={avatar} alt="err" />
+        </div>
+        <div
+          className={classNames(styles.circle, styles.circle2, {
+            [styles.circleRight2]: right,
+          })}
+        ></div>
+        <div
+          className={classNames(styles.circle, styles.circle3, {
+            [styles.circleRight3]: right,
+          })}
+        ></div>
       </div>
       <div className={styles.person}>
         <h4>{name}</h4>

@@ -67,7 +67,7 @@
   display: flex;
   align-items: center;
   width: 50%;
-  padding: 0 100px 0 100px;
+  padding: 0 50px 0 50px;
 
   h4 {
     font-size: 24px;
@@ -92,25 +92,62 @@
   }
 }
 
-.avatar {
+.avatarContainer {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.avRight {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+
+.circle {
+  min-width: 130px;
+  height: 130px;
+  background: linear-gradient(50deg, #07545f -32%, #379752 101%);
+  border-radius: 50%;
+//   box-shadow: -30px 0 0 0px linear-gradient(50deg, #07545f -32%, #379752 101%), -60px 0 0 0px linear-gradient(50deg, #07545f -32%, #379752 101%);
+}
+
+.circle1 {
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 130px;
-  height: 130px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  box-shadow: -30px 0 0 0px green, -60px 0 0 0px darkolivegreen;
 
   img {
     width: 125px;
     height: 125px;
     border-radius: 50%;
+    object-fit: cover;
   }
 }
 
-.avRight {
-  box-shadow: 30px 0 0 0px green, 60px 0 0 0px darkolivegreen;
+.circle2 {
+  position: absolute;
+  transform: translate(-25%);
+  opacity: .2;
+  color: red;
+}
+
+.circleRight2 {
+  transform: translate(25%);
+}
+
+.circle3 {
+  position: absolute;
+  transform: translate(-50%);
+  opacity: .1;
+  // transform: translate(200px);
+}
+
+.circleRight3 {
+  transform: translate(50%);
 }
 
 .person {
@@ -139,7 +176,7 @@
   font-weight: 100;
   font-family: 'Indie Flower', cursive;
   padding: 100px 0 40px 0;
-  background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+  background: linear-gradient(50deg, #07545f -32%, #379752 101%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
