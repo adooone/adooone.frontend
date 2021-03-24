@@ -1,8 +1,56 @@
+@use '../../scss/colors.scss' as *;
+
 .team {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.header {
+  font-size: 40px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 80px 0;
+}
+
+.adooTxt {
+  color: $text;
+  font-weight: 600;
+}
+
+.teamTxt {
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+  color: var(--primary-color);
+}
+
+
+.topAngleLogo {
+  position: absolute;
+  z-index: -1;
+  right: 127px;
+  top: -40px;
+  width: 130px;
+  min-height: 130px;
+  background-color: #303030;
+  border-radius: 50%;
+  border: 3px solid green;
+  box-shadow: -20px 0 0 0px green, -40px 0 0 0px darkolivegreen;
+}
+
+.bottomAngleLogo {
+  position: absolute;
+  bottom: -40px;
+  left: 100px;
+  width: 130px;
+  min-height: 130px;
+  background-color: #303030;
+  border-radius: 50%;
+  border: 3px solid green;
+  box-shadow: -20px 0 0 0px green, -40px 0 0 0px darkolivegreen;
 }
 
 .content {
@@ -11,14 +59,14 @@
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: initial;
 }
 
 .card {
   display: flex;
   align-items: center;
   width: 50%;
-  padding: 20px;
+  padding: 0 100px 0 100px;
 
   h4 {
     font-size: 24px;
@@ -44,13 +92,50 @@
 }
 
 .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 130px;
   height: 130px;
-  background-color: #303030;
+  background-color: $primary;
   border-radius: 50%;
-  box-shadow: -20px 0 0 0px green, -40px 0 0 0px darkolivegreen;
+  box-shadow: -30px 0 0 0px green, -60px 0 0 0px darkolivegreen;
+
+  img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+  }
+}
+
+.avRight {
+  box-shadow: 30px 0 0 0px green, 60px 0 0 0px darkolivegreen;
 }
 
 .person {
   padding: 18px;
+  color: $text;
+  font-family: 'Courier Prime', sans-serif;
+
+  h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+.bio {
+  opacity: 0.4;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  font-family: 'Indie Flower', cursive;
+  padding: 100px 0 40px 0;
 }

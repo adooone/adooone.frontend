@@ -33,6 +33,25 @@ body {
   }
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba($default, 0.4);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $default;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $default;
+}
+
 #root {
   display: flex;
   justify-content: center;
