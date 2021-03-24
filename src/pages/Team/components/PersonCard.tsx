@@ -1,8 +1,10 @@
 import classNames from 'classnames';
+import { motion } from 'framer-motion';
 import React from 'react';
 import styles from '../team.module.scss';
 
 interface Props {
+  index: number;
   bio: string;
   name: string;
   position: string;
@@ -12,6 +14,7 @@ interface Props {
 }
 
 const PersonCard: React.FC<Props> = ({
+  index,
   name,
   bio,
   position,
@@ -20,7 +23,12 @@ const PersonCard: React.FC<Props> = ({
   avatar,
 }) => {
   return (
-    <div className={classNames(styles.card, { [styles.right]: right })}>
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.3 + index * 0.2, ease: 'easeInOut' }}
+      className={classNames(styles.card, { [styles.right]: right })}
+    >
       <div
         className={classNames(styles.avatarContainer, {
           [styles.avRight]: avRight,
@@ -45,7 +53,7 @@ const PersonCard: React.FC<Props> = ({
         <p className={styles.position}>{position}</p>
         <p className={styles.bio}>{bio}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

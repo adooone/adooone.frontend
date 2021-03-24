@@ -20,7 +20,11 @@ const Portfolio: React.FC = () => {
   };
 
   return (
-    <Page className={styles.page} contentClassName={styles.content}>
+    <Page
+      animation="scale"
+      className={styles.page}
+      contentClassName={styles.content}
+    >
       <motion.div
         className={styles.tablet}
         initial={{ opacity: 0, y: 0, scaleY: 1.5 }}

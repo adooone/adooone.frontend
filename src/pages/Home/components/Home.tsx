@@ -7,7 +7,11 @@ const Home: React.FC = () => {
   useTheme('dark');
 
   return (
-    <Page className={styles.home} contentClassName={styles.content}>
+    <Page
+      animation="slide"
+      className={styles.home}
+      contentClassName={styles.content}
+    >
       <h1>Hello World!</h1>
     </Page>
   );

@@ -6,17 +6,22 @@ import PersonCard from './components/PersonCard';
 
 const Team: React.FC = () => {
   return (
-    <Page className={styles.team} contentClassName={styles.content}>
+    <Page
+      animation="slide"
+      className={styles.team}
+      contentClassName={styles.content}
+    >
       {/* <div className={styles.topAngleLogo}></div> */}
       <div className={styles.header}>
         <span className={styles.adooTxt}>Adooone</span>
         &nbsp;
-        <span className={styles.teamTxt}> Team</span>
+        <span className={styles.teamTxt}>Team</span>
       </div>
-      {team.map((person, id) => (
+      {team.map((person, index) => (
         <PersonCard
-          right={id % 2 === 1}
-          avRight={id % 2 === 1}
+          right={index % 2 === 1}
+          avRight={index % 2 === 1}
+          index={index}
           key={person.id}
           bio={person.bio}
           name={person.name}

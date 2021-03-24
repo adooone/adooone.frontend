@@ -8,12 +8,12 @@
 }
 
 .header {
-  font-size: 40px;
-  font-weight: 800;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 0 0 80px 0;
+  font-weight: 800;
+  font-size: 40px;
 }
 
 .adooTxt {
@@ -22,23 +22,23 @@
 }
 
 .teamTxt {
-  font-family: 'Indie Flower', cursive;
+  color: var(--primary-color);
   font-weight: 300;
   font-size: 35px;
-  color: var(--primary-color);
+  font-family: 'Indie Flower', cursive;
 }
 
 
 .topAngleLogo {
   position: absolute;
-  z-index: -1;
-  right: 127px;
   top: -40px;
+  right: 127px;
+  z-index: -1;
   width: 130px;
   min-height: 130px;
   background-color: #303030;
-  border-radius: 50%;
   border: 3px solid green;
+  border-radius: 50%;
   box-shadow: -20px 0 0 0px green, -40px 0 0 0px darkolivegreen;
 }
 
@@ -49,8 +49,8 @@
   width: 130px;
   min-height: 130px;
   background-color: #303030;
-  border-radius: 50%;
   border: 3px solid green;
+  border-radius: 50%;
   box-shadow: -20px 0 0 0px green, -40px 0 0 0px darkolivegreen;
 }
 
@@ -60,7 +60,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  overflow: initial;
+  // overflow: initial;
 }
 
 .card {
@@ -70,8 +70,8 @@
   padding: 0 50px 0 50px;
 
   h4 {
-    font-size: 24px;
     margin: 7px 0;
+    font-size: 24px;
   }
 
   p {
@@ -81,9 +81,9 @@
 }
 
 .right {
-  color: green;
-  align-self: flex-end;
   flex-direction: row-reverse;
+  align-self: flex-end;
+  color: green;
   h4 {
     text-align: end;
   }
@@ -95,15 +95,15 @@
 .avatarContainer {
   position: relative;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   padding: 0 20px;
 }
 
 .avRight {
   display: flex;
-  justify-content: flex-start;
   flex-direction: row-reverse;
+  justify-content: flex-start;
 }
 
 .circle {
@@ -111,28 +111,28 @@
   height: 130px;
   background: linear-gradient(50deg, #07545f -32%, #379752 101%);
   border-radius: 50%;
-//   box-shadow: -30px 0 0 0px linear-gradient(50deg, #07545f -32%, #379752 101%), -60px 0 0 0px linear-gradient(50deg, #07545f -32%, #379752 101%);
+  //   box-shadow: -30px 0 0 0px linear-gradient(50deg, #07545f -32%, #379752 101%), -60px 0 0 0px linear-gradient(50deg, #07545f -32%, #379752 101%);
 }
 
 .circle1 {
   z-index: 10;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   img {
     width: 125px;
     height: 125px;
-    border-radius: 50%;
     object-fit: cover;
+    border-radius: 50%;
   }
 }
 
 .circle2 {
   position: absolute;
+  color: red;
   transform: translate(-25%);
   opacity: .2;
-  color: red;
 }
 
 .circleRight2 {
@@ -156,9 +156,9 @@
   font-family: 'Indie Flower', cursive;
 
   h4 {
-    font-family: 'Josefin Sans', sans-serif;
     color: var(--primary-color);
     font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
   }
   p {
     font-size: 17px;
@@ -171,11 +171,11 @@
 
 .footer {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 100px 0 40px 0;
   font-weight: 100;
   font-family: 'Indie Flower', cursive;
-  padding: 100px 0 40px 0;
   background: linear-gradient(50deg, #07545f -32%, #379752 101%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
