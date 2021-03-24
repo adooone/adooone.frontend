@@ -17,13 +17,14 @@
 }
 
 .adooTxt {
-  color: $text;
+  color: var(--text-color);
   font-weight: 600;
 }
 
 .teamTxt {
   font-family: 'Indie Flower', cursive;
-  font-size: 25px;
+  font-weight: 300;
+  font-size: 35px;
   color: var(--primary-color);
 }
 
@@ -97,7 +98,7 @@
   align-items: center;
   min-width: 130px;
   height: 130px;
-  background-color: $primary;
+  background-color: var(--primary-color);
   border-radius: 50%;
   box-shadow: -30px 0 0 0px green, -60px 0 0 0px darkolivegreen;
 
@@ -114,8 +115,8 @@
 
 .person {
   padding: 18px;
-  color: $text;
-  font-family: 'Courier Prime', sans-serif;
+  color: var(--text-color);
+  font-family: 'Indie Flower', cursive;
 
   h4 {
     font-family: 'Josefin Sans', sans-serif;
@@ -123,7 +124,7 @@
     font-weight: 600;
   }
   p {
-    font-size: 13px;
+    font-size: 17px;
   }
 }
 
@@ -138,4 +139,7 @@
   font-weight: 100;
   font-family: 'Indie Flower', cursive;
   padding: 100px 0 40px 0;
+  background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
