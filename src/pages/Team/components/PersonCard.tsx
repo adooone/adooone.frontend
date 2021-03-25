@@ -10,7 +10,7 @@ interface Props {
   position: string;
   right: boolean;
   avRight: boolean;
-  avatar: string;
+  avatar?: string;
 }
 
 const PersonCard: React.FC<Props> = ({
@@ -35,7 +35,7 @@ const PersonCard: React.FC<Props> = ({
         })}
       >
         <div className={classNames(styles.circle, styles.circle1)}>
-          <img src={avatar} alt="err" />
+          {avatar && <img src={avatar} alt="err" />}
         </div>
         <div
           className={classNames(styles.circle, styles.circle2, {

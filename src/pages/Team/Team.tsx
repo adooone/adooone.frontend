@@ -28,7 +28,7 @@ const Team: React.FC = () => {
           avatar={person.avatar}
         />
       ))}
-      <div className={styles.footer}>Every little thing gonna be allright.</div>
+      <p className={styles.footer}>Every little thing gonna be allright.</p>
     </Page>
   );
 };

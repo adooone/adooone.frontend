@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   width: 50%;
-  padding: 0 50px 0 50px;
+  padding: 0 50px;
 
   h4 {
     margin: 7px 0;
@@ -57,9 +57,11 @@
   flex-direction: row-reverse;
   align-self: flex-end;
   color: green;
+
   h4 {
     text-align: end;
   }
+
   p {
     text-align: end;
   }
@@ -84,7 +86,6 @@
   height: 130px;
   background: linear-gradient(50deg, #07545f -32%, #379752 101%);
   border-radius: 50%;
-  //   box-shadow: -30px 0 0 0px linear-gradient(50deg, #07545f -32%, #379752 101%), -60px 0 0 0px linear-gradient(50deg, #07545f -32%, #379752 101%);
 }
 
 .circle1 {
@@ -116,7 +117,6 @@
   position: absolute;
   transform: translate(-50%);
   opacity: .1;
-  // transform: translate(200px);
 }
 
 .circleRight3 {
