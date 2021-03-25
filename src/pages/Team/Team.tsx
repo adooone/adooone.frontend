@@ -11,7 +11,6 @@ const Team: React.FC = () => {
       className={styles.team}
       contentClassName={styles.content}
     >
-      {/* <div className={styles.topAngleLogo}></div> */}
       <div className={styles.header}>
         <span className={styles.adooTxt}>Adooone</span>
         &nbsp;
@@ -30,7 +29,6 @@ const Team: React.FC = () => {
         />
       ))}
       <div className={styles.footer}>Every little thing gonna be allright.</div>
-      {/* <div className={styles.bottomAngleLogo}></div> */}
     </Page>
   );
 };

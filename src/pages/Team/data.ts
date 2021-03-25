@@ -31,7 +31,7 @@ const team: Person[] = [
   },
   {
     id: 'tosk',
-    name: 'Tosik',
+    name: 'Toksik',
     position: 'Cat',
     bio: 'Another impressive cat in history',
     avatar:

@@ -26,7 +26,7 @@ const PersonCard: React.FC<Props> = ({
     <motion.div
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.3 + index * 0.2, ease: 'easeInOut' }}
+      transition={{ delay: 0.3 + index * 0.2, ease: 'easeInOut', duration: 1 }}
       className={classNames(styles.card, { [styles.right]: right })}
     >
       <div
