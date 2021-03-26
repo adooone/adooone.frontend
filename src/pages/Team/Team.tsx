@@ -3,6 +3,7 @@ import team from './data';
 import Page from '~/shared/components/Page';
 import styles from './team.module.scss';
 import PersonCard from './components/PersonCard';
+import Branding from '~/shared/components/Brand';
 
 const Team: React.FC = () => {
   return (
@@ -11,6 +12,9 @@ const Team: React.FC = () => {
       className={styles.team}
       contentClassName={styles.content}
     >
+      <div className={styles.topBranding}>
+        <Branding />
+      </div>
       <div className={styles.header}>
         <span className={styles.adooTxt}>Adooone</span>
         &nbsp;
@@ -25,10 +29,13 @@ const Team: React.FC = () => {
           bio={person.bio}
           name={person.name}
           position={person.position}
-          // avatar={person.avatar}
+          avatar={person.avatar}
         />
       ))}
       <p className={styles.footer}>Every little thing gonna be allright.</p>
+      <div className={styles.bottomBranding}>
+        <Branding />
+      </div>
     </Page>
   );
 };

@@ -1,10 +1,24 @@
 @use '../../scss/colors.scss' as *;
 
 .team {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.topBranding {
+  position: absolute;
+  top: -60px;
+  right: -50px;
+}
+
+.bottomBranding {
+  position: absolute;
+  bottom: -60px;
+  left: -50px;
+  transform: rotate(180deg);
 }
 
 .header {
@@ -71,30 +85,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 0 20px;
-}
-
-.avRight {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-}
-
-.circle {
-  min-width: 130px;
-  height: 130px;
-  background: linear-gradient(50deg, #07545f -32%, #379752 101%);
-  border-radius: 50%;
-}
-
-.circle1 {
-  z-index: 10;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  padding: 0 20px;
 
   img {
+    position: absolute;
+    z-index: 10;
     width: 125px;
     height: 125px;
     object-fit: cover;
@@ -102,26 +98,55 @@
   }
 }
 
-.circle2 {
-  position: absolute;
-  color: red;
-  transform: translate(-25%);
-  opacity: .2;
+.avRight {
+  transform: rotate(180deg);
+
+  img {
+    transform: rotate(180deg);
+  }
 }
 
-.circleRight2 {
-  transform: translate(25%);
-}
+// .circle {
+//   min-width: 130px;
+//   height: 130px;
+//   background: linear-gradient(50deg, #07545f -32%, #379752 101%);
+//   border-radius: 50%;
+// }
 
-.circle3 {
-  position: absolute;
-  transform: translate(-50%);
-  opacity: .1;
-}
+// .circle1 {
+//   z-index: 10;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
 
-.circleRight3 {
-  transform: translate(50%);
-}
+//   img {
+//     width: 125px;
+//     height: 125px;
+//     object-fit: cover;
+//     border-radius: 50%;
+//   }
+// }
+
+// .circle2 {
+//   position: absolute;
+//   color: red;
+//   transform: translate(-25%);
+//   opacity: .2;
+// }
+
+// .circleRight2 {
+//   transform: translate(25%);
+// }
+
+// .circle3 {
+//   position: absolute;
+//   transform: translate(-50%);
+//   opacity: .1;
+// }
+
+// .circleRight3 {
+//   transform: translate(50%);
+// }
 
 .person {
   padding: 18px;

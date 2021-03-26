@@ -6,10 +6,12 @@ interface Props {
   avatar?: string;
 }
 
-const Branding: React.FC<Props> = () => {
+const Branding: React.FC<Props> = (avatar) => {
   return (
-    <div className="branding">
-      <div className={classNames(styles.circle, styles.circle1)}></div>
+    <div className={styles.branding}>
+      <div className={classNames(styles.circle, styles.circle1)}>
+        {/* {avatar && <img src={avatar} alt="err" />} */}
+      </div>
       <div className={classNames(styles.circle, styles.circle2)}></div>
       <div className={classNames(styles.circle, styles.circle3)}></div>
     </div>

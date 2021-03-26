@@ -1,3 +1,9 @@
+.branding {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .circle {
   min-width: 130px;
   height: 130px;
