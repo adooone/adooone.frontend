@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import React from 'react';
 import styles from '../team.module.scss';
+// import Branding from '~/shared/components/Branding';
 
 interface Props {
   index: number;
@@ -10,7 +11,7 @@ interface Props {
   position: string;
   right: boolean;
   avRight: boolean;
-  avatar?: string;
+  // avatar?: string;
 }
 
 const PersonCard: React.FC<Props> = ({
@@ -20,7 +21,7 @@ const PersonCard: React.FC<Props> = ({
   position,
   right,
   avRight,
-  avatar,
+  // avatar,
 }) => {
   return (
     <motion.div
@@ -34,7 +35,8 @@ const PersonCard: React.FC<Props> = ({
           [styles.avRight]: avRight,
         })}
       >
-        <div className={classNames(styles.circle, styles.circle1)}>
+        {/* <Branding /> */}
+        {/* <div className={classNames(styles.circle, styles.circle1)}>
           {avatar && <img src={avatar} alt="err" />}
         </div>
         <div
@@ -46,7 +48,7 @@ const PersonCard: React.FC<Props> = ({
           className={classNames(styles.circle, styles.circle3, {
             [styles.circleRight3]: right,
           })}
-        ></div>
+        ></div> */}
       </div>
       <div className={styles.person}>
         <h4>{name}</h4>
