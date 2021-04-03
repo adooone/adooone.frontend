@@ -1,0 +1,47 @@
+@use '../../../scss/colors' as *;
+
+.effect1 {
+  position: absolute;
+  z-index: 9;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  border: 1px solid transparentize($primary, 1);
+  transition: all .4s ease;
+
+  :hover > & {
+    border: 1px solid transparentize($primary, .4);
+    animation: border .3s ease;
+    animation-fill-mode: forwards;
+  }
+}
+
+.effect2 {
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+  height: 30px;
+  // border: 5px solid transparentize($primary, 1);
+  border: 5px solid $primary;
+  transition: all .4s ease;
+
+  // .clicked > & {
+  //   animation: border2 .3s ease;
+  //   animation-fill-mode: forwards;
+  // }
+}
+
+.effect3 {
+  position: absolute;
+  z-index: 7;
+  width: 100%;
+  height: 30px;
+  // border: 10px solid transparentize($primary, 1);
+  border: 10px solid $primary;
+  transition: all .4s ease;
+
+  // .clicked > & {
+  //   animation: border3 .3s ease .1s;
+  //   animation-fill-mode: forwards;
+  // }
+}

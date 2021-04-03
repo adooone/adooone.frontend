@@ -6,7 +6,7 @@ import Routes from '~/pages/Routes';
 import '~/scss/main.scss';
 
 // TODO: remove sass files
-import '~/sass/main.sass';
+// import '~/sass/main.sass';
 
 const App: React.FC = () => {
   return (
