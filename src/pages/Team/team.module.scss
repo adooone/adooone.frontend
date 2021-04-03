@@ -1,4 +1,5 @@
 @use '../../scss/colors.scss' as *;
+@use '../../scss/config.scss' as *;
 
 .team {
   position: relative;
@@ -53,9 +54,16 @@
 
 .card {
   display: flex;
-  align-items: center;
-  width: 50%;
-  padding: 0 50px;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0;
+
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    padding: 0 50px;
+  }
 
   h4 {
     margin: 7px 0;
@@ -69,9 +77,12 @@
 }
 
 .right {
-  flex-direction: row-reverse;
   align-self: flex-end;
   color: green;
+
+  @include tablet {
+    flex-direction: row-reverse;
+  }
 
   h4 {
     text-align: end;
@@ -86,7 +97,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 0 20px;
 
   img {
@@ -96,6 +106,11 @@
     height: 125px;
     object-fit: cover;
     border-radius: 50%;
+  }
+
+  @include tablet {
+    justify-content: center;
+    transform: rotate(0deg);
   }
 }
 
@@ -108,6 +123,8 @@
 }
 
 .person {
+  box-sizing: border-box;
+  width: 100%;
   padding: 18px;
   color: var(--text-color);
   font-family: 'Indie Flower', cursive;
@@ -119,6 +136,10 @@
   }
   p {
     font-size: 17px;
+  }
+
+  @include tablet {
+    width: auto;
   }
 }
 
