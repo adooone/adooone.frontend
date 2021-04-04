@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router';
-import styles from '../footer.module.scss';
 import ThemeSwitcher from '~/shared/components/Theme/ThemeSwitcher';
+import styles from './slogan.module.scss';
 
 const Slogan: React.FC = () => {
   const location = useLocation();

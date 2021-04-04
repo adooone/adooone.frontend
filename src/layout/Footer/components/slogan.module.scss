@@ -1,0 +1,28 @@
+@use '../../../scss/config.scss' as *;
+
+.slogan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+  font-size: $fontDefault;
+  button {
+    margin-left: 6px;
+    font-family: 'Indie Flower', cursive;
+  }
+
+  @include tablet {
+    font-size: $fontSmall;
+  }
+}
+
+.name {
+  font-weight: 600;
+  opacity: .8;
+}
+
+.quote {
+  font-weight: 400;
+  font-family: 'Indie Flower', cursive;
+  opacity: .3;
+}

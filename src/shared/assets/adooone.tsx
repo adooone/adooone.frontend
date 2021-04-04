@@ -25,7 +25,6 @@ const getDelayedTransition = (index: number): Transition => {
 
 const AdoooneLogo: React.FC<Props> = ({ width = 30, height = 30 }) => {
   const isDark = useRecoilValue(userPreferences.theme) === 'dark';
-  // const gradient = isDark ? 'lightGradient' : 'darkGradient';
   const gradient = isDark ? 'darkGreenGradient' : 'lightGreenGradient';
 
   return (

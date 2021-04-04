@@ -1,3 +1,5 @@
+@use '../../../scss/config' as *;
+
 .page {
   display: flex;
   align-items: center;
@@ -16,12 +18,16 @@
   position: absolute;
   bottom: -20%;
   left: 0;
-  display: flex;
+  display: none;
   justify-content: center;
   width: 100%;
   overflow: hidden;
 
   svg {
     width: 1100px;
+  }
+
+  @include tablet {
+    display: flex;
   }
 }
