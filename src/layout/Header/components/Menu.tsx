@@ -36,7 +36,11 @@ const Menu: React.FC = () => {
               transition={{ delay: LINK_START_ANIMATION_TIME }}
             >
               <Link to="/">
-                <AdooButton bordered caption="HOME" />
+                <AdooButton
+                  onClick={handleMenuButtonClick}
+                  bordered
+                  caption="HOME"
+                />
               </Link>
             </motion.div>
             <motion.div
@@ -46,7 +50,11 @@ const Menu: React.FC = () => {
               transition={{ delay: LINK_START_ANIMATION_TIME + 0.2 }}
             >
               <Link to="/portfolio">
-                <AdooButton bordered caption="PORTFOLIO" />
+                <AdooButton
+                  onClick={handleMenuButtonClick}
+                  bordered
+                  caption="PORTFOLIO"
+                />
               </Link>
             </motion.div>
             <motion.div
@@ -56,7 +64,11 @@ const Menu: React.FC = () => {
               transition={{ delay: LINK_START_ANIMATION_TIME + 0.4 }}
             >
               <Link to="/team">
-                <AdooButton bordered caption="TEAM" />
+                <AdooButton
+                  onClick={handleMenuButtonClick}
+                  bordered
+                  caption="TEAM"
+                />
               </Link>
             </motion.div>
           </motion.div>
