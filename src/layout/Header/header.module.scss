@@ -1,46 +1,18 @@
 @use '../../scss/colors' as *;
+@use '../../scss/config' as *;
 
 .header {
   z-index: 999;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  min-height: 65px;
-  padding: 0px 40px;
-}
+  min-height: 120px;
+  padding: 0px 30px;
 
-.logo {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 18px;
-
-  & > p {
-    margin: 0;
-    padding-top: 6px;
+  @include tablet {
+    min-height: 100px;
+    padding: 0 40px;
   }
-
-  svg {
-    margin-right: 4px;
-    transition: fill 0.3s ease;
-  }
-}
-
-.menu {
-  display: flex;
-}
-
-.items {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  width: auto;
-  width: 200px;
-  height: 30px;
-  font-weight: 300;
-  font-size: 14px;
 }

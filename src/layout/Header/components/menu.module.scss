@@ -1,0 +1,30 @@
+@use '../../../scss/config' as *;
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.items {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    width: 200px;
+    height: 30px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
+
+.menuButton {
+  font-size: 40px;
+
+  @include tablet {
+    display: none;
+  }
+}

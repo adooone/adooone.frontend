@@ -46,7 +46,7 @@ const AdooButton: React.FC<Props> = ({
     );
   if (contained) return containedBtn();
   return (
-    <button disabled={disabled} onClick={onClick}>
+    <button className={className} disabled={disabled} onClick={onClick}>
       {caption}
     </button>
   );

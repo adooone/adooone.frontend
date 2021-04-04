@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from '../header.module.scss';
 import AdoooneLogo from '~/shared/assets/adooone';
+import styles from './logo.module.scss';
 
 const Logo: React.FC = () => {
   return (

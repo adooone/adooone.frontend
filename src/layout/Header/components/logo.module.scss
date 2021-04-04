@@ -1,0 +1,30 @@
+@use '../../../scss/config.scss' as *;
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1;
+
+  & > p {
+    margin: 0;
+    padding-top: 6px;
+    font-size: $fontLarge;
+
+    @include tablet {
+      font-size: $fontMedium;
+    }
+  }
+
+  svg {
+    width: $fontExtraLarge;
+    height: $fontExtraLarge;
+    margin-right: 4px;
+    transition: fill 0.3s ease;
+
+    @include tablet {
+      width: $fontLarger;
+      height: $fontLarger;
+    }
+  }
+}
