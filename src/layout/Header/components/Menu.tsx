@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import { AnimatePresence, motion, Variants } from 'framer-motion';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import DesktopMenu from '~/layout/Header/components/DesktopMenu';
 import AdooButton from '~/shared/components/AdooButton/AdooButton';
 import styles from './menu.module.scss';
 
@@ -21,6 +22,7 @@ const Menu: React.FC = () => {
         className={styles.menuButton}
         caption={isOpened ? '👍' : '😎'}
       />
+      <DesktopMenu />
       <AnimatePresence>
         {isOpened && (
           <motion.div
