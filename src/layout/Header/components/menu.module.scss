@@ -1,12 +1,7 @@
 @use '../../../scss/config' as *;
 @use '../../../scss/colors' as *;
 
-.menu {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.items {
+.desktopMenu {
   display: none;
 
   @include tablet {
@@ -20,6 +15,15 @@
     font-weight: 300;
     font-size: 14px;
   }
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.items {
+  display: none;
 
   &.opened {
     position: absolute;
